@@ -8,7 +8,8 @@ import evolution.util.Sys;
 
 @RestController
 public class AnyController {
-	// Correspond to server.port in application.properties.
+	// Correspond to server.port in application.properties in the current project.
+	// Set the port number for spring cloud config server as 8888 in order to avoid port number clashes with clients.
 	@Value("${server.port}")
 	private Integer port;
 	
